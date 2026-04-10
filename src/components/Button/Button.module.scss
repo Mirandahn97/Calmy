@@ -1,0 +1,13 @@
+@use '../../style/globals' as globals;
+
+.btn {
+    background-color: globals.$color_blue;
+     color: globals.$color_gray;
+    border: none;
+    border-radius: 40px;
+    width: 90%;
+    height: 42px;
+    margin: 1rem;
+    font-family: "Tangerine", cursive;
+    font-size:xx-large;
+}

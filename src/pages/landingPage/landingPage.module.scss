@@ -1,0 +1,19 @@
+@use '../../style/globals' as globals;
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.landingSite {
+    background-color: globals.$color_pink;
+    height: 100vh;
+
+    img {
+        display: block;
+        width: 90%;
+        object-fit: cover;
+        border-radius: 50px;
+        padding:1rem;
+    }
+}

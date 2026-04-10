@@ -1,0 +1,16 @@
+@use '../../style/globals' as globals;
+
+.startStyle {
+    background-color: globals.$color_pink;
+    height: 100vh;
+
+}
+    .menuDiv{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10%;
+        padding: 0 1rem;
+    }

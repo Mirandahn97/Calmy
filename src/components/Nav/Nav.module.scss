@@ -1,0 +1,28 @@
+@use '../../style/globals' as globals;
+
+.navStyle {
+    position: fixed;
+    bottom: 5px;
+    margin: 0 10px;
+    left: 0;
+    width: fit-content;
+    background-color: globals.$color_blue;
+    border-radius: 50px;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 1rem 0 1rem;
+    }
+
+    li{
+        list-style: none;
+    }
+}
+
+.navImg {
+    display: block;
+    width: 50%;
+    object-fit: cover;
+}
