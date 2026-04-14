@@ -1,17 +1,23 @@
 {
     "name": "Camly",
     "short_name": "Camly",
-    "start_url": "./App.tsx",
-    "id": "./App.tsx",
+    "start_url": "./index.html",
+    "id": "./index.html",
     "display": "standalone",
     "background_color": "#FFAFCC",
     "theme_color": "#FFAFCC",
     "orientation": "portrait-primary",
-    
+
     "icons": [
         {
             "src": "assets/Img/icon.svg",
             "sizes": "192x192",
+            "type": "svg",
+            "purpose": "any"
+        },
+        {
+            "src": "assets/Img/icon.svg",
+            "sizes": "512x512",
             "type": "svg",
             "purpose": "any"
         }
