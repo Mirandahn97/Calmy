@@ -1,9 +1,13 @@
+interface fetchValue{
+  endpoint: string
+  method: string 
+  body: string
+  token: string 
+}
+
 // Hovedfunktion til API-kald
 export const fetchApi = async (
-  endpoint,
-  method = 'GET',
-  body,
-  token  // Brug eksisterende token som fallback
+{endpoint, method, body, token}: fetchValue
 ) => {
   const headers = {
     'Content-Type': 'application/json',
@@ -34,6 +38,7 @@ export const fetchApi = async (
   } catch (err) {
     // Håndter fetch-fejl
     console.error('Fetch error:', err);
-    return { success: false, error: err.message };
+    const errorMessage = err instanceof Error ? err.message : 'Unknown error';
+    return { success: false, error: errorMessage };
   }
 };

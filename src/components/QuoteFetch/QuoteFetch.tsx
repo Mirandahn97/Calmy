@@ -2,13 +2,19 @@ import { fetchApi } from "../../utils/fetch/fetch";
 import { useEffect, useState } from "react";
 import style from './QuoteFetch.module.scss'
 
+interface QuoteData {
+  q: string;
+  a: string;
+  h: string;
+}
+
 export const QuoteFetch = () => {
-  const [quote, setQuote] = useState(null);
+  const [quote, setQuote] = useState<QuoteData[] | null>(null);
 
   useEffect(() => {
     const fetchQuote = async () => {
       try {
-        const response = await fetchApi('/api/zenquotes', 'GET', null, null);
+        const response = await fetchApi({endpoint: '/api/zenquotes', method: 'GET', body: "", token: ""});
         if (response.success) {
           setQuote(response.data);
           console.log(response.data);
