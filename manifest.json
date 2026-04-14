@@ -1,0 +1,19 @@
+{
+    "name": "Camly",
+    "short_name": "Camly",
+    "start_url": "./App.tsx",
+    "id": "./App.tsx",
+    "display": "standalone",
+    "background_color": "#FFAFCC",
+    "theme_color": "#FFAFCC",
+    "orientation": "portrait-primary",
+    
+    "icons": [
+        {
+            "src": "assets/Img/icon.svg",
+            "sizes": "192x192",
+            "type": "svg",
+            "purpose": "any"
+        }
+    ]
+}

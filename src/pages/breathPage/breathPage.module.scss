@@ -1,0 +1,65 @@
+@use '../../style/globals' as globals;
+
+.dotContainer {
+    position: relative;
+    
+    left: 50%;
+    transform: translate(-50%, 40%);
+    height: 50vw;
+    width: 50vw;
+    background: linear-gradient(90deg, #e7efc5 50%, #8acdea 50%);
+
+    border: solid 2.8vw transparent;
+    // border: 2.8vw solid globals.$color_blue;
+    border-bottom-color: globals.$color_orange;
+    border-left-color: globals.$color_green;
+    border-right-color: globals.$color_blue;
+    border-radius: 50%;
+     box-sizing: border-box;
+    z-index: 1;
+
+     .backgroundGradient {
+     position: absolute;
+     top: 0; right: 0; bottom: 0; left: 0;
+     z-index: -1;
+    //  margin: -2.8vw; /* !importanté */
+     border-radius: inherit; /* !importanté */
+     background: globals.$color_pink;
+     }
+
+    .test {
+        position: absolute;
+        margin: 0;
+        top:  50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: "Tangerine", cursive;
+        font-size: xx-large;
+        color: globals.$color_gray;
+
+    }
+    
+    .dot {
+     position: absolute;
+     height: 6vw;
+     width: 6vw;
+     aspect-ratio: 1/1;
+     border-radius: 50%;
+     box-sizing: border-box;
+     background-color: globals.$color_purple;
+     transform-origin: 22.2vw 22.2vw;
+     animation: dot 8s linear infinite;
+
+    }
+    
+    @keyframes dot {
+        0% {
+            transform: rotate(0deg);
+        }
+        
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+}
