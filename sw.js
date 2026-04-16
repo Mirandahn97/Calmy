@@ -3,7 +3,7 @@ self.addEventListener('install', () => {
     console.log('Service Worker has been installed');
 })
 
-const staticAssets = ['./index.html', './src/main.tsx']
+const staticAssets = ['./index.html', './src/main.tsx', 'fallback.html']
 
 const staticCasche = ""
 const dynamicCache = ""
@@ -39,6 +39,9 @@ self.addEventListener('fetch', (event) => {
                                 //Retunerer fetch request 
                                 return fetchRes
                             })
+                    }).catch(() => {
+                        //Hvis overstående giver fejl kaldes fallback siden
+                        return caches.match('fallback.html')
                     })
             })
     )

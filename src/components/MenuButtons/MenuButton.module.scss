@@ -1,13 +1,13 @@
 @use '../../style/globals' as globals;
 
-.menuBtn{
+.menuBtn {
     background-color: globals.$color_blue;
     color: globals.$color_gray;
+    font-family: "Tangerine", cursive;
     border: none;
     border-radius: 40px;
     width: 90%;
     aspect-ratio: 1/1;
-    font-family: "Tangerine", cursive;
     font-size: 27px;
     justify-self: center;
 }

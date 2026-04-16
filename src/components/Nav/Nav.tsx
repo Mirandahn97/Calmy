@@ -13,27 +13,27 @@ export function Nav() {
         <nav className={style.navStyle}>
             <ul>
                 <li>
-                    <NavLink to='/'>
+                    <NavLink to='/startpage'>
                         <img className={style.navImg} src={house} alt="" />
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to='/'>
+                    <NavLink to='/breathpage'>
                         <img className={style.navImg} src={cloud} alt="" />
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to='/'>
-                        <img className={style.navImg} src={pen} alt="" />
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink to='/'>
+                    <NavLink to='/moodpage'>
                         <img className={style.navImg} src={smily} alt="" />
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to='/'>
+                    <NavLink to='/diarypage'>
+                        <img className={style.navImg} src={pen} alt="" />
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink to='/soundpage'>
                         <img className={style.navImg} src={music} alt="" />
                     </NavLink>
                 </li>

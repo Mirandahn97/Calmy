@@ -3,13 +3,11 @@
 .quoteStyle {
     display: flex;
     flex-direction: column;
-    font-family: "Tangerine", cursive; 
     font-size: 27px;
     justify-self: center;
 
     p {
         text-align: center;
         margin: 10px;
-        color: globals.$color_gray;
     }
 }
